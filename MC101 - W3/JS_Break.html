@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // //Break to Loop 1
+        // let text = "";
+
+        // loop1: for (let j = 1; j < 5; j++) {
+        //     loop2: for (let i = 1; i < 5; i++) {
+        //         if (i === 3) { break loop1; }
+        //         text += i;
+        //     }
+        // }
+
+        // Break to Loop 2
+        let text = "";
+
+        loop1: for (let j = 1; j < 5; j++) {
+            loop2: for (let i = 1; i < 5; i++) {
+                if (i === 3) { break loop2; }
+                text += i;
+            }
+        }
+
+        const cars = ["BMW", "Volvo", "Saab", "Ford"];
+        list: {
+            text += cars[0] + "<br>";
+            text += cars[1] + "<br>";
+            break list;
+            text += cars[2] + "<br>";
+            text += cars[3] + "<br>";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // for (let i = 1; i < 10; i++) {
+        //     if (i === 3) { 
+        //         continue; 
+        //     }
+
+        //     text += "The number is " + i + "<br>";
+        // }
+
+        // Continue to Loop 1
+        // let text = "";
+
+        // loop1: for (let j = 1; j < 5; j++) {
+        //     loop2: for (let i = 1; i < 5; i++) {
+        //         if (i === 3) { 
+        //             continue loop1; 
+        //         }
+        //         text += i;
+        //     }
+        // }
+
+        // Continue to Loop 2
+        let text = "";
+
+        loop1: for (let j = 1; j < 5; j++) {
+            loop2: for (let i = 1; i < 5; i++) {
+                if (i === 3) { 
+                    continue loop2; 
+                }
+                text += i;
+            }
+        }
+    </script>
+</body>
+</html>
